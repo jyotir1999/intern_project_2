@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/styles.css">
+    <link rel="icon" href="/static/favicon.ico">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <title>SQL Query Execution</title>
+</head>
+<body>
+    <div class="top_container">
+        <img id="logo" src="/static/societe_generale_logo.jpg" alt="">
+    </div>
+    <div class="middle_container">
+        <h1>SQL Query Execution</h1>
+        <div class = "main_box">
+            <p class="heading">Please insert a SQL Query to validate it!!</p>
+            <div class="outer_box">
+                 <textarea class="querybox" name="querybox" id="" ></textarea>
+            </div>
+            <button id="validate-btn" class="btn">Validate SQL Syntax</button>
+            <button id="clear-btn" class="btn">Clear</button>
+            <!-- <button id="redirecting" class="btn">Redirect to Form</button> -->
+        </div>
+        <div class="error_box">
+            <p class="heading">Errors if any!!</p>
+            <div id="error">
+                <textarea readonly name="errorarea" id="error_area" ></textarea>
+                <!-- <p id="errorString">Errors here</p> -->
+            </div>
+            <p class="heading" id="fullstop">.</p>
+            
+        </div>
+        <div class="form_box">
+            <form action="" method="post">
+                 
+                    <label class="labels" for="versionNumber">Version Number</label>
+                    <input class="labels"  type="text" name="versionNumber"><br><br>
+                    <label class="labels" for="Restart_Nap">Restart Nap</label>
+                    <select id="restartNap" class="labels"   name="RestartNap" id="restartNap">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <input id="submit_btn" class="btn" type="submit" onSubmit="document.getElementById('submit_btn').disabled=true;">
+            </form>
+        </div>
+    </div>
+    <div class="bottom_container">
+      <img id="company_icon" src="/static/favicon-32x32.png" alt="">
+      <p id="trademark">Société Générale 2021</p>
+    </div>
+    <script src="/static/index.js"></script>
+</body>
+</html>
