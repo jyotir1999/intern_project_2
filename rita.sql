@@ -1,0 +1,1 @@
+Select * from table where name = "rita Pathak";
