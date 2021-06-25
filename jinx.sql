@@ -1,1 +1,0 @@
-Select * from table where name = "sanskriti";
