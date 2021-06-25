@@ -1,0 +1,1 @@
+update into table values("jyotirmoy","cs");
